@@ -1,8 +1,42 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-import './body.css'
+import './body.css';
 
 const Body = (props) => {
+  // Состояние для хранения содержимого textarea
+  const [textareaContent, setTextareaContent] = useState('');
+
+  // Обработчик изменений в textarea
+  const handleTextareaChange = (event) => {
+    setTextareaContent(event.target.value);
+  };
+
+  // Обработчик нажатия на кнопку "Сгенерировать"
+  const handleGenerateClick = () => {
+    // Вывод содержимого textarea в консоль
+    console.log(textareaContent);
+
+    // fetch('https://samplevault.ru/api/v1/samples', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify({ content: textareaContent }),
+    // })
+    //   .then(response => {
+    //     if (!response.ok) {
+    //       throw new Error('Network response was not ok');
+    //     }
+    //     // Дополнительные действия при успешной отправке
+    //     console.log('Data sent successfully');
+    //   })
+    //   .catch(error => {
+    //     // Обработка ошибки
+    //     console.error('There was an error sending data:', error);
+    //   });
+
+  };
+
   return (
     <div className="body-container">
       <div className="body-body">
@@ -23,71 +57,27 @@ const Body = (props) => {
             <div className="body-logo">
               <div className="body-logotext">
                 <span className="body-text02">
-                  <span className="body-text03"> Sample</span>
+                  <span className="body-text03"> Sample</span>
                   <span>Vault</span>
                 </span>
               </div>
             </div>
           </div>
-          <textarea className="body-frame24" placeholder="Напиши что бы ты хотел услышать"></textarea>
+          <textarea
+            className="body-frame24"
+            placeholder="Напиши что бы ты хотел услышать"
+            value={textareaContent} // Привязываем значение к состоянию textareaContent
+            onChange={handleTextareaChange} // Обработчик изменений в textarea
+          ></textarea>
         </div>
         <div className="body-frame33">
-          {/* <div className="body-frame32">
-         <div className="body-frame30">
-              <div className="body-text07">
-                <span className="body-text">
-                    <span>Способ генерации</span>
-                </span>
-              </div>
-              <div className="body-text07">
-                <span className="body-text08">
-                  <span>Длительность</span>
-                </span>
-              </div>
-            </div>
-            <div className="body-frame31">
-              <div className="body-dropdowntrack">
-              <button class="dropdown-toggle" onclick="toggleDropdown()">
-                <span className="body-text16">
-                  <span>Промпт</span>
-                </span>
-                <div className="body-chevron">
-                  <img
-                    src="../external/chevrondowni114-ktl.svg"
-                    alt="chevrondownI114"
-                    className="body-chevrondown"
-                  />
-                  </div>
-                </button>
-                <div class="dropdown-content" id="dropdownContent">
-                </div>
-              </div>
-              <div className="body-frame29">
-                <div className="body-frame26">
-                  <span className="body-text18">
-                    <span>00</span>
-                  </span>
-                </div>
-                <div className="body-frame28">
-                  <span className="body-text20">:</span>
-                </div>
-                <div className="body-frame27">
-                  <span className="body-text21">
-                    <span>00</span>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          <button className="body-frame251">
-            <b className="body-text23" placeholder="Сгенерировать">
-              {/* <span>Сгенерировать сэмпл</span> */}
-            </b>
+          <button className="body-frame251" onClick={handleGenerateClick}>
+            <b className="body-text23">Сгенерировать</b>
           </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Body
+export default Body;
