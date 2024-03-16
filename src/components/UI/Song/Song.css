@@ -1,14 +1,48 @@
 .song-container {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; */
+    position: relative;
+    gap: 10px;
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+  }
+  .song-info {
+    gap: 5px;
+    width: 431px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  .song-number {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .song-number-text {
+    color: rgba(255, 255, 255, 1);
+    width: 14px;
+    height: auto;
+    font-size: 20px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
   }
   
   .song-image {
-    width: 150px; /* Можно настроить размер изображения */
-    height: 150px;
-    /* height: auto; */
-    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
   }
   
   .song-details {
@@ -25,3 +59,11 @@
     color: #666; /* Цвет описания песни */
   }
   
+  .song-control-img {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+  }
