@@ -58,3 +58,10 @@
     flex-grow: 0;
     
     }
+
+    @media screen and (max-width: 480px) {
+        .left-selection {
+            order: -1;
+            width: 100%;
+        }
+    }
