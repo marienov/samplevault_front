@@ -96,33 +96,7 @@
         display: flex;
     }
     
-    .large-image {
-        border-radius: 10px;
-        width: 30vw;
-        max-width: 30vw;
-        height: 30vw;
-        flex: 2;
-        background-color: #ccc; /* Placeholder color */
-    }
     
-    .small-images {
-        justify-content: space-between;
-        align-items: space-between;
-        text-align: space-between;
-        flex: 0;
-        display: flex;
-        margin: 5px 0px 0px 10px;
-        flex-direction: column;
-    }
-    
-    .small-image {
-        border-radius: 10px;
-        width: 15vw;
-        height: 15vw;
-        flex: 1;
-        background-color: #ddd; /* Placeholder color */
-        margin-bottom: 5px;
-    }
     
     .trend-block {
         display: flex;
