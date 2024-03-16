@@ -1,0 +1,11 @@
+.right-selection {
+    flex: 2;
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    align-items: center; 
+}
