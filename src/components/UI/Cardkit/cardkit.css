@@ -1,0 +1,504 @@
+.cardkit-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.cardkit-cardkit {
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cardkit-title3 {
+  gap: 10px;
+  width: 475px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cardkit-text {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-frame21 {
+  gap: 10px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cardkit-stroke1artist {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.cardkit-frame18 {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardkit-text02 {
+  color: rgba(255, 255, 255, 1);
+  width: 14px;
+  height: auto;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-frame20 {
+  gap: 5px;
+  width: 431px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cardkit-image11 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.cardkit-frame19 {
+  gap: 20px;
+  display: flex;
+  padding: 0 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.cardkit-text03 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-text04 {
+  color: rgba(255, 255, 255, 1);
+}
+.cardkit-star01 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-star0101 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-download01 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-download0101 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-stroke2artist {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.cardkit-frame181 {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardkit-text09 {
+  color: rgba(255, 255, 255, 1);
+  width: 14px;
+  height: auto;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-frame201 {
+  gap: 5px;
+  width: 431px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cardkit-image22 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.cardkit-frame191 {
+  gap: 20px;
+  display: flex;
+  padding: 0 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.cardkit-text10 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-text11 {
+  color: rgba(255, 255, 255, 1);
+}
+.cardkit-star0102 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-star0103 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-download0102 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-download0103 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-stroke3artist {
+  gap: 10px;
+  width: 475px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cardkit-frame182 {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardkit-text16 {
+  color: rgba(255, 255, 255, 1);
+  width: 14px;
+  height: auto;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-frame202 {
+  gap: 5px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.cardkit-image51 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.cardkit-frame192 {
+  gap: 20px;
+  display: flex;
+  padding: 0 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.cardkit-text17 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-text18 {
+  color: rgba(255, 255, 255, 1);
+}
+.cardkit-star0104 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-star0105 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-download0104 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-download0105 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-stroke4artist {
+  gap: 10px;
+  width: 475px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cardkit-frame183 {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardkit-text23 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-frame203 {
+  gap: 5px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.cardkit-image12 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.cardkit-frame193 {
+  gap: 20px;
+  display: flex;
+  padding: 0 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.cardkit-text24 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-text25 {
+  color: rgba(255, 255, 255, 1);
+}
+.cardkit-star0106 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-star0107 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-download0106 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-download0107 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-stroke5artist {
+  gap: 10px;
+  width: 475px;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.cardkit-frame184 {
+  gap: 10px;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cardkit-text30 {
+  color: rgba(255, 255, 255, 1);
+  width: 14px;
+  height: auto;
+  font-size: 20px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: normal;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-frame204 {
+  gap: 5px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.cardkit-image23 {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.cardkit-frame194 {
+  gap: 20px;
+  display: flex;
+  padding: 0 10px;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: center;
+}
+.cardkit-text31 {
+  color: rgba(255, 255, 255, 1);
+  height: auto;
+  flex-grow: 1;
+  font-size: 15px;
+  font-style: Medium;
+  text-align: left;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 150%;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.cardkit-text32 {
+  color: rgba(255, 255, 255, 1);
+}
+.cardkit-star0108 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-star0109 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
+.cardkit-download0108 {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.cardkit-download0109 {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+}
