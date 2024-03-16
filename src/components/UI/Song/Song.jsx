@@ -3,6 +3,7 @@ import "./Song.css"
 
 import star from '../icons/star.svg'
 import download from '../icons/download.svg'
+import { SampleButton } from '../SampleInfo/SampleButton';
 
 
 
@@ -17,7 +18,8 @@ export function Song({number, imageUrl, title, description }) {
         <span className="song-number-text">{number}</span>
       </div>
       <div className="song-info" >
-        <img src={imageUrl} alt={title} className="song-image" />
+        <SampleButton imageUrl={imageUrl}  />
+        {/* <img src={imageUrl} alt={title} className="song-image" /> */}
         <div className="song-details">
           <h2 className="song-title">{title}</h2>
           <p className="song-description">{description}</p>

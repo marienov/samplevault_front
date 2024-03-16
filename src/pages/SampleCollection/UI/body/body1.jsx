@@ -3,6 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import './body1.css'
+import { SampleButton } from '../../../../components/UI/SampleInfo/SampleButton'
 
 const Body1 = (props) => {
   return (
@@ -34,11 +35,7 @@ const Body1 = (props) => {
           <div className="body1-frame87">
             <div className="body1-frame86">
               <div className="body1-frame79">
-                <img
-                  src="/external/image111147-t36h-200h.png"
-                  alt="IMAGE111147"
-                  className="body1-image11"
-                />
+                <SampleButton imageUrl = '/SongImgs/song1.png' />
                 <div className="body1-frame78">
                   <div className="body1-frame75">
                     <span className="body1-text08">
