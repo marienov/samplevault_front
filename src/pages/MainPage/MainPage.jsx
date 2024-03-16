@@ -2,18 +2,17 @@ import React, { useState } from 'react';
 import "./MainPage.css"
 import LeftMenu from "../../components/UI/LeftMenu/LeftMenu";
 
-import Lenta from '../Lenta/Lenta'; // Импортируйте нужные компоненты правой панели
+import Lenta from '../Lenta/Lenta'; 
 import SampleCollection from '../SampleCollection/SampleCollection';
 import SampleGen from '../SampleGen/SampleGen';
 
 const MainPage = () => {
-    const [selectedMenu, setSelectedMenu] = useState('Лента'); // Используйте состояние для отслеживания выбранного элемента
+    const [selectedMenu, setSelectedMenu] = useState('Лента'); 
 
     const handleMenuClick = (menuName) => {
         setSelectedMenu(menuName);
     };
 
-    // Определите содержимое правой панели в зависимости от выбранного элемента меню
     const renderRightSelection = () => {
         switch (selectedMenu) {
             case 'Лента':
