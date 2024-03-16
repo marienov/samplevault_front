@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import image from "../icons/Cardkit/image111145-g8le-200h.png"
+// import image from "../icons/Cardkit/image111145-g8le-200h.png"
 
 
 import './cardkit.css'
@@ -26,7 +26,7 @@ const Cardkit = (props) => {
             </div>
             <div className="cardkit-frame20">
               <img
-                src={image}
+                // src={image}
                 alt="IMAGE111145"
                 className="cardkit-image11"
               />
