@@ -24,22 +24,12 @@ const MainPage = () => {
                 <div className='block2'>
                     <div className="trend-block">
                         <div className="kit">
-                            <h1>Kit</h1>
-                            {/* <Song
-                imageUrl="https://adminu.ru/wp-content/uploads/2022/12/vkontakte.jpg"
-                title="Название песни"
-                description="Описание песни"
-            /> */}
+                            <h1 className="container-text">Киты</h1>
                             <Cardkit></Cardkit>
-                            <p>Kit text line 1</p>
-                            <p>Kit text line 2</p>
-                            <p>Kit text line 3</p>
                         </div>
                         <div className="sample">
-                            <h1>Sample</h1>
-                            <p>Sample text line 1</p>
-                            <p>Sample text line 2</p>
-                            <p>Sample text line 3</p>
+                        <h1 className="container-text">Сэмплы</h1>
+                            <Cardkit></Cardkit>
                         </div>
                     </div>
                 </div>

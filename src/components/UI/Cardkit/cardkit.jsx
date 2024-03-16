@@ -18,9 +18,9 @@ const Cardkit = (props) => {
       </Helmet>
       <div className="cardkit-cardkit">
         <div className="cardkit-title3">
-          <span className="cardkit-text">
-            <span>Киты</span>
-          </span>
+          {/* <span className="cardkit-text">
+            Киты
+          </span> */}
         </div>
         <div className="cardkit-frame21">
           <Song number = '1' title = "Embient Electronica" description = "Electronica" imageUrl = '/SongImgs/song1.png' />

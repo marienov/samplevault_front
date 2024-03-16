@@ -170,3 +170,16 @@ font-weight: 400; /* Обычный (regular) */
         width: 100%;
     }
 }
+
+.container-text {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    font-size: 20px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
