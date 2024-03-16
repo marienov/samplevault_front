@@ -4,6 +4,7 @@ import LeftMenu from "../../components/UI/LeftMenu/LeftMenu";
 
 import Lenta from '../Lenta/Lenta'; // Импортируйте нужные компоненты правой панели
 import SampleCollection from '../SampleCollection/SampleCollection';
+import SampleGen from '../SampleGen/SampleGen';
 
 const MainPage = () => {
     const [selectedMenu, setSelectedMenu] = useState('Лента'); // Используйте состояние для отслеживания выбранного элемента
@@ -18,7 +19,7 @@ const MainPage = () => {
             case 'Лента':
                 return <Lenta />;
             case 'Сгенерировать AI':
-                return <SampleCollection />;
+                return <SampleGen />;
             case 'Сэмплы':
                 return <SampleCollection />;
             default:
