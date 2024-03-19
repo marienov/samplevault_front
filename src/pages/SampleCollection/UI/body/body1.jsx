@@ -95,7 +95,6 @@ const Body1 = (props) => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

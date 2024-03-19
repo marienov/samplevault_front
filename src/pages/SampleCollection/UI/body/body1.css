@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  padding-left: 40px; /* Нужно без 40px гибко сделать */
 }
 .body1-body1 {
   gap: 30px;
