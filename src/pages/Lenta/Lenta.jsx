@@ -16,11 +16,11 @@ const Lenta = () => {
                 <div className="trend-block">
                     
                     <div className="trend-block_box">
-                        <h1 className="container-text">Киты</h1>
+                        <h1 className="container-text">Треки</h1>
                         <Cardkit></Cardkit>
                     </div>
                     <div className="trend-block_box">
-                    <h1 className="container-text">Сэмплы</h1>
+                    <h1 className="container-text">Звуки</h1>
                         <Cardkit></Cardkit>
                     </div>
                 </div>
