@@ -1,14 +1,4 @@
-.right-selection {
-    flex: 2;
-    width: 100%;
-    padding: 10px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .custom-file-input {
     /* Auto layout */
@@ -53,30 +43,6 @@
     background-color: #6e6e6e
 }
 
-
-.left-selection {
-    flex: 1;
-    align-items: center;
-    text-align: left;
-    justify-content: center;
-    max-width: 250px;
-}
-
-.but {
-    display: flex;
-    margin: 5px 10px;
-    border-radius: 10px;
-    padding: 10px;
-    height: 60px;
-    width: 250px;
-    text-align: left;
-    align-items: center;
-    justify-content: left;
-}
-
-.but:hover {
-    background: linear-gradient(#5d5d64, #3e3e40);
-}
 
 .img {
     width: 34px;

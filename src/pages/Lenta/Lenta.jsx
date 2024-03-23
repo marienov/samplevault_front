@@ -1,20 +1,25 @@
 import React from 'react';
 import "./Lenta.css"
 
-import Cardkit from '../../components/UI/Cardkit/cardkit';
-import { ImageSection } from '../../components/UI/ImageSection/ImageSection';
+import Cardkit from '../../components/Cardkit/Cardkit';
+import { ImageSection } from '../../components/ImageSection/ImageSection';
 
 const Lenta = () => {
     return (
         <div className="right-selection">
-            <ImageSection/>
-            <div className='block2'>
+            <div className='container-new'>
+                <span className='text-new'>Новое</span>
+                <ImageSection/>
+            </div>
+            <div className='container-new'>
+                <span className='text-new'>В тренде</span>
                 <div className="trend-block">
-                    <div className="kit">
+                    
+                    <div className="trend-block_box">
                         <h1 className="container-text">Киты</h1>
                         <Cardkit></Cardkit>
                     </div>
-                    <div className="sample">
+                    <div className="trend-block_box">
                     <h1 className="container-text">Сэмплы</h1>
                         <Cardkit></Cardkit>
                     </div>

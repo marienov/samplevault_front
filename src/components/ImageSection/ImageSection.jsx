@@ -3,7 +3,7 @@ import "./ImageSection.css"
 export function ImageSection() {
   
     return (
-        <div className="new-block">
+        <div className="new-block_images">
             <div >
             <img src={'ImageSection/image.png'} alt='image1' className="large-image" />
             </div>

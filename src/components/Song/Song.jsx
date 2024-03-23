@@ -1,8 +1,7 @@
 import React from 'react';
 import "./Song.css"
 
-import star from '../icons/star.svg'
-import download from '../icons/download.svg'
+
 import { SampleButton } from '../SampleInfo/SampleButton';
 
 
@@ -25,12 +24,12 @@ export function Song({number, imageUrl, title, description }) {
           <p className="song-description">{description}</p>
         </div>
         <img
-          src={star}
+          src={'icons/star.svg'}
           alt="star01I114"
           className="song-control-img"
         />
         <img
-          src={download}
+          src={'icons/download.svg'}
           alt="download01I114"
           className="song-control-img"
         />

@@ -3,7 +3,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import './body1.css'
-import { SampleButton } from '../../../../components/UI/SampleInfo/SampleButton'
+import { SampleButton } from '../../../../components/SampleInfo/SampleButton'
 
 const Body1 = (props) => {
   return (

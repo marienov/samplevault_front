@@ -1,20 +1,27 @@
+.new-block_images {
+    justify-content: space-between;
+    display: flex;
+    margin: 5px;
+    width: 70vw;
+}
+
 .large-image {
     border-radius: 10px;
-    width: 30vw;
-    margin: 5px 0px 0px 10px;
-    max-width: 30vw;
+    width: 35vw;
+    /* margin: 5px 0px 0px 10px; */
+    max-width: 35vw;
     height: 35vw;
     flex: 2;
     /* background-color: #ccc; Placeholder color */
 }
 
 .small-images {
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: space-between;
-    text-align: space-between;
+    gap: 10px;
     flex: 0;
     display: flex;
-    margin: 5px 0px 0px 10px;
+    /* margin: 5px 0px 0px 10px; */
     flex-direction: column;
 }
 
@@ -24,5 +31,5 @@
     height: 15vw;
     flex: 1;
     /* background-color: #ddd; Placeholder color */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }

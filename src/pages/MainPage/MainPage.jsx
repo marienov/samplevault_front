@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./MainPage.css"
-import LeftMenu from "../../components/UI/LeftMenu/LeftMenu";
+import LeftMenu from "../../components/LeftMenu/LeftMenu";
 
 import Lenta from '../Lenta/Lenta'; 
 import SampleCollection from '../SampleCollection/SampleCollection';
