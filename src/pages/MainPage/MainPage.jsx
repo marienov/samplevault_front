@@ -13,6 +13,7 @@ const MainPage = () => {
         setSelectedMenu(menuName);
     };
 
+
     const renderRightSelection = () => {
         switch (selectedMenu) {
             case 'Лента':

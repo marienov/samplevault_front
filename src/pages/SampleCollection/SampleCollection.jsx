@@ -15,7 +15,7 @@ const SampleCollection = () =>  {
         formData.append('audio', file);
 
         try {
-            const response = await fetch('https://samplevault.ru/api/v1/samples/upload', {
+            const response = await fetch('https://samplevault.ru/api/v1/sounds/upload', {
                 method: 'POST',
                 body: formData,
                 mode: 'cors'
@@ -37,7 +37,7 @@ const SampleCollection = () =>  {
 
     const handleGetAllSamples = async (event) => {
         try {
-            const response = await fetch('https://samplevault.ru/api/v1/samples', {
+            const response = await fetch('https://samplevault.ru/api/v1/sounds', {
                 method: 'GET',
                 mode: 'cors'
             });

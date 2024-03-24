@@ -6,7 +6,7 @@ import { SampleButton } from '../SampleInfo/SampleButton';
 
 
 
-export function Song({number, imageUrl, title, description }) {
+export function Song({number, imageUrl, title, author }) {
   
   
   return (
@@ -21,7 +21,7 @@ export function Song({number, imageUrl, title, description }) {
         {/* <img src={imageUrl} alt={title} className="song-image" /> */}
         <div className="song-details">
           <h2 className="song-title">{title}</h2>
-          <p className="song-description">{description}</p>
+          <p className="song-description">{author}</p>
         </div>
         <img
           src={'icons/star.svg'}
