@@ -1,13 +1,21 @@
 import React from 'react';
 import "./SampleGen.css"
 
-import Body from "./UI/body/body"
+import Generation from "../../components/Generation/Generation"
 
 const SampleGen = () => {
     return (
-            <div className="right-selection">
-                <Body />
+        <div className="right-selection">
+            <Generation />
+            <div className='container-new'>
+                <span className='text-new'>Мои генерации: </span>
+                Здесь нужно отобразить звуки
             </div>
+            <div className='container-new'>
+                <span className='text-new'>Опубликованные генерации других пользователей: </span>
+                Здесь тоже звуки
+            </div>
+        </div>
     );
 };
 
