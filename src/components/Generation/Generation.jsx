@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import "./Generation.css"
 import Dropdown from './Dropdown/Dropdown';
+import DragDrop from '../DragDrop/DragDrop';
 
 const Generation = () => {
-    const [generationMethod, setGenerationMethod] = useState(""); // Состояние для хранения выбранного метода генерации
+    const [generationMethod, setGenerationMethod] = useState("option1"); // Состояние для хранения выбранного метода генерации
 
     // Обработчик изменения значения в выпадающем списке
     const handleDropdownChange = (selectedValue) => {
@@ -22,9 +23,24 @@ const Generation = () => {
                 />  
                 );
             case "option2":
-                return "Choose img // TODO";
+                const img_types = ["JPG", "PNG", "GIF"];
+                return (
+                    <DragDrop 
+                        fileTypes={img_types}
+                        label="Выберите или перетащите сюда изображение"
+                        pathtoicon={"icons/images-light.svg"}
+                        alt={"images-light"}
+                    />
+                    );
             default:
-                return "Choose Audio // TODO";
+                const audio_types = ["WAV", "MP3"];
+                return (
+                    <DragDrop 
+                        fileTypes={audio_types}
+                        label="Выберите или перетащите сюда аудиофайл"
+                        pathtoicon={"icons/icon-park-outline.svg"}
+                        alt={"icon-park-outline"}
+                    />);
         }
     };
 

@@ -1,5 +1,5 @@
 
-import React, { useState,useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./Lenta.css"
 
 import Cardkit from '../../components/Cardkit/Cardkit';
