@@ -1,0 +1,27 @@
+.song-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .song-image {
+    width: 150px; /* Можно настроить размер изображения */
+    height: 150px;
+    /* height: auto; */
+    margin-right: 20px;
+  }
+  
+  .song-details {
+    flex-grow: 1;
+  }
+  
+  .song-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .song-description {
+    font-size: 14px;
+    color: #666; /* Цвет описания песни */
+  }
+  
