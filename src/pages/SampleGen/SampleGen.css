@@ -1,0 +1,43 @@
+.sample-gen-text-recent-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+
+    width: 1111px;
+    height: 49px;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.sample-gen-text-recent{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+
+    /* Color/Base/Black */
+    color: #1A1A1A;
+    color: color(display-p3 0.102 0.102 0.102);
+}
+
+.sample-gen-body-recent{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    padding: 0px;
+    gap: 10px 40px;
+
+    position: absolute;
+    width: 1112px;
+    height: 499px;
+    left: 464px;
+    top: 361px;
+}
