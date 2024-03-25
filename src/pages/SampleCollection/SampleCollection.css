@@ -1,89 +1,11 @@
-
-
-.custom-file-input {
-    /* Auto layout */
-    /*padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
-    /* width: 70 px; */
-    /*height: 18px;
-
-    font-family: 'Montserrat' -apple-system, Roboto, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-
-    color: #FFFFFF;
-    color: color(display-p3 1.000 1.000 1.000);*/
-
-    display: flex;
-    margin: 5px 10px;
-    border-radius: 10px;
+.right-selection {
+    flex: 2;
+    width: 100%;
     padding: 10px;
-    height: 60px;
-    width: 250px;
-    text-align: left;
-    align-items: center;
-    justify-content: left;
-}
-
-.custom-file-input:hover {
-    background: linear-gradient(#5d5d64, #3e3e40);
-}
-
-.upload_button {
-    width: 34px;
-    height: 34px;
+    padding-right: 30px;
     display: flex;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #6e6e6e
-}
-
-
-.img {
-    width: 34px;
-    height: 34px;
-    display: flex;
-    border-radius: 10px;
-    padding: 5px;
-    background-color: #6e6e6e
-}
-
-.txt {
-
-    /* Auto layout */
-    padding-left: 10px;
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
-    /* width: 70 px; */
-    height: 18px;
-
-    font-family: 'Montserrat' -apple-system, Roboto, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-
-    color: #FFFFFF;
-    color: color(display-p3 1.000 1.000 1.000);
-
-
-    /* Inside auto layout */
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-}
-
-@media screen and (max-width: 480px) {
-    .left-selection {
-        order: -1;
-        width: 100%;
-    }
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    align-items: center; 
 }

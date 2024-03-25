@@ -32,10 +32,10 @@ const Body = (props) => {
           <textarea className="body-frame24" placeholder="Напиши что бы ты хотел услышать"></textarea>
         </div>
         <div className="body-frame33">
-          {/* <div className="body-frame32">
-         <div className="body-frame30">
+          <div className="body-frame32">
+            <div className="body-frame30">
               <div className="body-text07">
-                <span className="body-text">
+                <span className="body-text08">
                     <span>Способ генерации</span>
                 </span>
               </div>
@@ -47,7 +47,6 @@ const Body = (props) => {
             </div>
             <div className="body-frame31">
               <div className="body-dropdowntrack">
-              <button class="dropdown-toggle" onclick="toggleDropdown()">
                 <span className="body-text16">
                   <span>Промпт</span>
                 </span>
@@ -57,9 +56,6 @@ const Body = (props) => {
                     alt="chevrondownI114"
                     className="body-chevrondown"
                   />
-                  </div>
-                </button>
-                <div class="dropdown-content" id="dropdownContent">
                 </div>
               </div>
               <div className="body-frame29">
@@ -78,7 +74,7 @@ const Body = (props) => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
           <button className="body-frame251">
             <b className="body-text23" placeholder="Сгенерировать">
               {/* <span>Сгенерировать сэмпл</span> */}
