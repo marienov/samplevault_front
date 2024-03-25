@@ -21,7 +21,8 @@
     /* top: calc(100% + 5px); */
  
     top: 80px;
-    right: 555px;
+    /* right: 555px; */
+    right: 15%;
     width: 343px;
     height: 320px;
     /* padding: 25px; */
