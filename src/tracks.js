@@ -1,7 +1,7 @@
 
-import cali from "./assets/cali-wataboi.mp3";
-import fifty from "./assets/50-tobylane.mp3";
-import iwonder from "./assets/iwonder-dreamheaven.mp3";
+import cali from "./components/Player/assets/cali-wataboi.mp3";
+import fifty from "./components/Player/assets/50-tobylane.mp3";
+import iwonder from "./components/Player/assets/iwonder-dreamheaven.mp3";
 
 // All of these artists are at https://pixabay.com/music/search/mood/laid%20back/
 export default [
