@@ -27,17 +27,22 @@
 }
 
 .sample-gen-body-recent{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    align-content: flex-start;
-    padding: 0px;
-    gap: 10px 40px;
+/* Body / tracks - equalizer */
 
-    position: absolute;
-    width: 1112px;
-    height: 499px;
-    left: 464px;
-    top: 361px;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+align-content: flex-start;
+padding-top: 30px;
+gap: 10px 40px;
+
+position: top;
+width: 1112px;
+height: 499px;
+left: 464px;
+top: 361px;
+
+
 }

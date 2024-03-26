@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import "./SampleGen.css"
 
 import Generation from "../../components/Generation/Generation"
-import Cardkit from '../../components/Cardkit/Cardkit';
+import SongGenKit from '../../components/SongKit/SongGenKit';
 
 const SampleGen = () => {
 
-    const [trendSounds, setTrendSounds] = useState([]);
+    const [genSounds, setGenSounds] = useState([]);
 
-    const handleGetTrendSounds = async () => {
+    const handleGetGenSounds = async () => {
         try {
-            const response = await fetch('https://samplevault.ru/api/v1/sounds/random', {
+            const response = await fetch('https://samplevault.ru/api/v1/sounds/last_generated', {
                 method: 'GET',
                 mode: 'cors'
             });
@@ -42,7 +42,7 @@ const SampleGen = () => {
             });
             console.log(typeof(Sounds))
 
-            setTrendSounds(Sounds); // Обновляем состояние samples
+            setGenSounds(Sounds); // Обновляем состояние samples
 
         } catch (error) {
             console.error('Ошибка:', error);
@@ -51,20 +51,21 @@ const SampleGen = () => {
     };
 
     useEffect(() => {
-        handleGetTrendSounds();
+        handleGetGenSounds();
     }, []);
 
     return (
         <div className="right-selection">
             <Generation />
+
             <div className='sample-gen-body-recent'>
                 <div className='sample-gen-text-recent-wrapper'>
                     <span className='sample-gen-text-recent'>Мои последние сгенерированные звуки: </span>
                 </div>
-                <Cardkit trendSounds={trendSounds}></Cardkit>
-            </div>
-            
+                {/* <SongGen imageUrl={"SongImgs/song1.png"} number={"1"} title={"I'm a song"}/> */}
+                <SongGenKit sounds={genSounds}/>
 
+            </div>
         </div>
     );
 };
