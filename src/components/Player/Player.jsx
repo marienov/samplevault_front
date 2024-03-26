@@ -1,22 +1,26 @@
 import React, { useState, useEffect, useRef } from "react";
-import AudioControls from "./AudioControls";
-import "./styles.css";
-import AudioButtons from "./AudioButtons";
+import AudioControls from "./Controls";
+import "./Player.css";
+import AudioButtons from "./Buttons";
 
 
 
-const AudioPlayer = ({ tracks }) => {
+const AudioPlayer = ({ tracks, current_id }) => {
   // State
   
-  const [trackIndex, setTrackIndex] = useState(0);
+  const [trackIndex, setTrackIndex] = useState(current_id);
   const [trackProgress, setTrackProgress] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
 
   // Destructure for conciseness
-  const { title, artist, color, image, audioSrc } = tracks[trackIndex];
+  const { title, author, audioSrc } = tracks[trackIndex];
+
+  console.log(audioSrc)
+  const newSrc = audioSrc.split("?")[0];
 
   // Refs
-  const audioRef = useRef(new Audio(audioSrc));
+  const audioRef = useRef(new Audio(newSrc));
+  console.log(audioRef)
   const intervalRef = useRef();
   const isReady = useRef(false);
 
@@ -87,7 +91,7 @@ const AudioPlayer = ({ tracks }) => {
   useEffect(() => {
     audioRef.current.pause();
 
-    audioRef.current = new Audio(audioSrc);
+    audioRef.current = new Audio(newSrc);
     setTrackProgress(audioRef.current.currentTime);
 
     if (isReady.current) {
@@ -112,7 +116,7 @@ const AudioPlayer = ({ tracks }) => {
     <div className="audio-player">
       <div className="track-info">
         <div className="track-name">
-          <div className="artist">{artist}</div>
+          <div className="artist">{author}</div>
           <div className="title">{title}</div>
         </div>
         

@@ -8,17 +8,15 @@ import { Song } from '../Song/Song.jsx'
 
 import './Cardkit.css'
 
-const Cardkit = (object) => {
+const Cardkit = (props) => {
 
   //const trendSoundsArr = [...trendSounds]
-  //console.log('logging '+process.env.PUBLIC_URL)
+  console.log('logging '+process.env.PUBLIC_URL)
   return (
     <div className="cardkit-container">
-        {}
-        {console.log(object.trendSounds)}
-        {console.log(typeof(object.trendSounds))}
-        {object.trendSounds.map((sound, index) => (
-                    <Song number={index+1} {...sound} />
+        {console.log('tS ',props.trendSounds)}
+        {props.trendSounds.map((sound, index) => (
+                    <Song onStartMusic = {props.onStartMusic} playlist={props.trendSounds} number={index+1} {...sound} />
                 ))}
         
     </div>

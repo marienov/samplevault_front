@@ -5,12 +5,14 @@ import "./Lenta.css"
 import Cardkit from '../../components/Cardkit/Cardkit';
 import { ImageSection } from '../../components/ImageSection/ImageSection';
 
-const Lenta = () => {
+const Lenta = (props) => {
 
     const [trendSounds, setTrendSounds] = useState([]);
 
+
     const handleGetTrendSounds = async () => {
         try {
+            console.log('trying to fetch')
             const response = await fetch('https://samplevault.ru/api/v1/sounds/random', {
                 method: 'GET',
                 mode: 'cors'
@@ -35,8 +37,9 @@ const Lenta = () => {
 
             const Sounds = data.map(item => {
                 return {
+                    audioSrc: item.audio_url,
                     imageUrl: item.icon_url,
-                    author: 'autor',
+                    author: 'author',
                     duration: item.duration,
                     title: item.title,
                 };
@@ -70,11 +73,12 @@ const Lenta = () => {
                     
                     <div className="trend-block_box">
                         <h1 className="container-text">Треки</h1>
-                        <Cardkit trendSounds={trendSounds}></Cardkit>
+                        {console.log("aaaaaaaa ",trendSounds)}
+                        <Cardkit onStartMusic={props.onStartMusic} trendSounds={trendSounds}></Cardkit>
                     </div>
                     <div className="trend-block_box">
                     <h1 className="container-text">Звуки</h1>
-                        <Cardkit trendSounds={trendSounds}></Cardkit>
+                        <Cardkit onStartMusic={props.onStartMusic} trendSounds={trendSounds}></Cardkit>
                     </div>
                 </div>
             </div>
