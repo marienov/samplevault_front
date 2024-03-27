@@ -22,8 +22,9 @@
 .imgd {
     /* padding: px; */
     /* background: white */
-    width: 124px;
+    width: 104px;
     height: 80px;
+    margin-right: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,6 +36,7 @@
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    align-items: center;    margin: 0px 30px;
-    background: grey;
+    align-items: center;
+    margin: 0px 30px;
+    background: white;
 }

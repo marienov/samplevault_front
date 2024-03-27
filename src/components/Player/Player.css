@@ -1,0 +1,124 @@
+:root {
+    --white: #fff;
+    --active-color: #FFFFFF;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="range"] {
+    
+    height: 5px;
+    -webkit-appearance: none;
+    width: 709px;
+  
+    border-radius: 5px;
+    background: #FFFFFF;
+    transition: background 0.2s ease;
+    cursor: pointer;
+  }
+  
+  .progress-bar {
+    display: flex;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .audio-player {
+    border-top: 1px solid #989898;
+    background-color:  #FFFFFF;
+    vertical-align: middle;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* max-width: 350px; */
+    padding: 24px;
+    /* box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2); */
+    margin: auto;
+    color: var(--white);
+  }
+  
+  .track-info {
+    width: 100%;
+    justify-content: space-around;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+  
+  .track-name {
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    
+  }
+  
+  .title {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    text-align: left;
+    color: #989898;
+  }
+  
+  
+  .artist {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.38px;
+    text-align: left;
+    color: #1A1A1A;
+  
+  }
+  
+  .audio-controls {
+    background-color: #1A1A1A;
+    padding: 10px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    
+    width: 136px;
+    justify-content: space-between;
+  }
+  
+  .audio-controls .prev svg,
+  .audio-controls .next svg {
+    width: 14px;
+    height: 14px;
+  }
+  
+  .audio-controls .play svg,
+  .audio-controls .pause svg {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .audio-buttons {
+    
+    display: flex;
+    justify-content:  space-between;
+    vertical-align: center;
+    min-width: 95px;
+  }
+  
+  

@@ -6,22 +6,29 @@ import { SampleButton } from '../SampleInfo/SampleButton';
 
 
 
-export function Song({number, imageUrl, title, description }) {
+export function Song(props) {
   
-  
+  const handleClick = (playlist, number) => {
+    // Вызовите функцию myFunction с параметрами
+    console.log('song_click')
+    console.log('playlist',playlist )
+    props.onStartMusic(playlist, number);
+  };
+
+  //console.log(props)
   return (
     
 
-    <div className="song-container">
+    <div onClick={() => handleClick(props.playlist, props.number)} className="song-container">
       <div className="song-number">
-        <span className="song-number-text">{number}</span>
+        <span className="song-number-text">{props.number}</span>
       </div>
       <div className="song-info" >
-        <SampleButton imageUrl={imageUrl}  />
+        <SampleButton imageUrl={props.imageUrl}  />
         {/* <img src={imageUrl} alt={title} className="song-image" /> */}
         <div className="song-details">
-          <h2 className="song-title">{title}</h2>
-          <p className="song-description">{description}</p>
+          <h2 className="song-title">{props.title}</h2>
+          <p className="song-description">{props.author}</p>
         </div>
         <img
           src={'icons/star.svg'}
