@@ -11,13 +11,13 @@ const LeftMenu = ({ onMenuClick }) => {
                 </div>
                 <span className="left-selection_txt">Лента</span>
             </div>
-            <div className="left-selection_button" onClick={() => onMenuClick('Сгенерировать AI')}>
+            <div className="left-selection_button" onClick={() => onMenuClick('Сэмплы')}>
                 <div className="left-selection_button_img">
                     <img src={"icons/sounds.svg"} alt="search" />
                 </div>
                 <span className="left-selection_txt">Звуки</span>
             </div>
-            <div className="left-selection_button" onClick={() => onMenuClick('Сэмплы')}>
+            <div className="left-selection_button" onClick={() => onMenuClick('Треки')}>
                 <div className="left-selection_button_img">
                     <img src={"icons/tracks.svg"} alt="search" />
                 </div>
