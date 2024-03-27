@@ -4,6 +4,7 @@
     width: 245px;
     height: 60px;
     padding: 0;
+    margin-right: 10px;
     border: 0;
     border-radius: 10px;
     /* background-color: #6CA4F9; */
@@ -21,7 +22,8 @@
     /* top: calc(100% + 5px); */
  
     top: 80px;
-    right: 555px;
+    right: 225px;
+    /* right: 15%; */
     width: 343px;
     height: 320px;
     /* padding: 25px; */
@@ -93,6 +95,9 @@
  }
 
  .left{
+   display: flex;
+   align-items: center;
+   justify-content: center;
     width: 185px;
  }
 
@@ -105,6 +110,9 @@
 }
 
  .btn-top{
+   display: flex;
+   align-items: center;
+   justify-content: center;
     width: 100%;
     height: 50%;
     border: 0;
@@ -113,6 +121,10 @@
  }
 
  .btn-bottom{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #478DF7;
     width: 100%;
     height: 50%;
     border: 0;
@@ -121,13 +133,17 @@
  }
 
  .own-sound{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
     margin-left: 20px;
     width: 303px;
     height: 60px;
  }
 
  .btn2{
-    padding-right: 60px;
+    /* padding-right: 60px; */
 
     display: flex;
     align-items: center;
@@ -146,8 +162,14 @@
  }
 
  .bl{
-    width: 60px;
-    height: 38px;
+   background: #F02222;
+   border-radius: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+    width: 34px;
+    height: 34px;
     margin-top: 11px;
     margin-bottom: 11px;
     padding: 8px;
@@ -156,6 +178,22 @@
 
 
 
- 
+ .txt{
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 20px;
+ }
 
- 
+ .btn-top:hover{
+   background: #C3C3C3;
+ }
+
+ .btn-bottom:hover{
+   background: #C3C3C3;
+ }
+
+ .btn2:hover{
+   background: #C3C3C3;
+ }
