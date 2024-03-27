@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f1d4373-f6af-4e23-bc85-a5e4f2327cb0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cardkit/Cardkit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cardkit/Cardkit.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Song/Song.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Song/Song.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Song/Song.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Song/Song.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/SampleCollection.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/SampleCollection.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/SampleCollection.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/SampleCollection.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/Sample/Sample.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/UI/Sample/Sample.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/body/body1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/UI/body/body1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/body/body1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/UI/body/body1.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/Sample/SampleItem.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/UI/Sample/SampleItem.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/Sample/SampleItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/SampleCollection/UI/Sample/SampleItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/body/body1.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/SampleCollection/UI/body/body1.jsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "samples__page",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/home/marcussss1/samplevault_front",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.start.executor": "Run",
-    "ts.external.directory.path": "/home/marcussss1/Загрузки/WebStorm-233.14015.89/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;samples__page&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/marcussss1/samplevault_front&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/marcussss1/Загрузки/WebStorm-233.14015.89/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/UI/Cardkit" />
@@ -109,6 +114,8 @@
       <workItem from="1710579311485" duration="1182000" />
       <workItem from="1710867090876" duration="970000" />
       <workItem from="1710868209875" duration="2834000" />
+      <workItem from="1711483076406" duration="3762000" />
+      <workItem from="1711523225204" duration="3847000" />
     </task>
     <servers />
   </component>
