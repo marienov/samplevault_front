@@ -1,115 +1,32 @@
-.mainpage {
-    display: flex;
-    flex-direction: row;
-    /* background-color: #2f2f2f; */
-    width: 100%;
-    height: 100%;
-}
-
-/* .txt{
-    padding-left: 10px;
-} */
-
-.txt {
-
-/* Auto layout */
-padding-left: 10px;
-display: flex;
-flex-direction: row;
-/* justify-content: center;
-align-items: center; */
-/* width: 70 px; */
-height: 18px;
-
-font-family: 'Montserrat' -apple-system, Roboto, Helvetica, sans-serif;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 18px;
-
-color: #FFFFFF;
-color: color(display-p3 1.000 1.000 1.000);
 
 
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
+.container-new{
+    justify-content: center;
+    margin: 5px;
 
 }
 
-.img{
-    width: 34px;
-    height: 34px;
-    display: flex;
-    border-radius: 10px;
+.text-new{
     padding: 5px;
-    background-color: #6e6e6e
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.88px;
+    text-align: left;
+
 }
 
-.new-block{
-    /* border-radius: 1vw; */
-    justify-content: center;
-
-}
-
-.block2{
-    /* justify-content: center;
-    align-items: center; */
-    text-align: center;
-}
-
-.right-selection {
-    flex: 2;
-    width: 100%;
-    padding: 10px;
-    padding-right: 30px;
-    display: flex;
-    flex-direction: column;
-    /* text-align: center; */
-    justify-content: center;
-    /* align-items: center; */
-}
-  
-.new-block {
-    display: flex;
-}
-
-.large-image {
-    border-radius: 10px;
-    width: 30vw;
-    max-width: 30vw;
-    height: 30vw;
-    flex: 2;
-    background-color: #ccc; /* Placeholder color */
-}
-
-.small-images {
-    justify-content: space-between;
-    align-items: space-between;
-    text-align: space-between;
-    flex: 0;
-    display: flex;
-    margin: 5px 0px 0px 10px;
-    flex-direction: column;
-}
-
-.small-image {
-    border-radius: 10px;
-    width: 15vw;
-    height: 15vw;
-    flex: 1;
-    background-color: #ddd; /* Placeholder color */
-    margin-bottom: 5px;
-}
 
 .trend-block {
+    margin: 5px;
     display: flex;
     flex-direction: row;
 }
 
-.kit, .sample {
+.trend-block_box {
+    margin-top: 10px;
     flex: 1;
+    flex-shrink : 1;
 }
 
 @media screen and (max-width: 480px) {
@@ -132,4 +49,18 @@ flex-grow: 0;
         width: 20vw;
         height: 20vw;
     }
+
+    .left-selection {
+        order: -1;
+        width: 100%;
+    }
+}
+
+.container-text {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    text-align: left;
+
 }
