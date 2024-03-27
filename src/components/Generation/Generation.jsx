@@ -3,7 +3,7 @@ import "./Generation.css"
 import Dropdown from './Dropdown/Dropdown';
 import DragDrop from '../DragDrop/DragDrop';
 
-const Generation = () => {
+const Generation = ({onGenerate}) => {
     const [generationMethod, setGenerationMethod] = useState("option1"); // Состояние для хранения выбранного метода генерации
 
     // Обработчик изменения значения в выпадающем списке
@@ -91,7 +91,7 @@ const Generation = () => {
                         </div>
                     </div>
                 </div>
-                <button className='generation-button'>Сгенерировать звук</button>
+                <button className='generation-button' onClick={onGenerate}>Сгенерировать звук</button>
             </div>
         </div>
 

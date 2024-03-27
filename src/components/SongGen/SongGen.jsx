@@ -3,7 +3,25 @@ import "./SongGen.css"
 
 import { SampleButton } from '../SampleInfo/SampleButton';
 
-export function SongGen({number, imageUrl, title}) {
+export function SongGen({number, imageUrl, title, audioUrl}) {
+
+
+    const handleDownload = () => {
+    fetch(audioUrl.split("?")[0])
+      .then(response => response.blob())
+      .then(blob => {
+        const url = window.URL.createObjectURL(new Blob([blob]));
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', `${title}.mp3`);
+        document.body.appendChild(link);
+        link.click();
+        link.parentNode.removeChild(link);
+      })
+      .catch(error => console.error('Ошибка при загрузке файла:', error));
+  };
+
+
   return (
     <div className="song-gen-container">
       <div className="song-gen-info" >
@@ -29,7 +47,9 @@ export function SongGen({number, imageUrl, title}) {
           src={'icons/download.svg'}
           alt="download"
           className="song-gen-control-img"
+          onClick={handleDownload}
         />
+        
         <img 
           src={'icons/trash.svg'}
           alt="trash"

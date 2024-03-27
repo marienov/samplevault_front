@@ -2,8 +2,14 @@ import React, {useState} from 'react';
 import "./Drop.css"
 
 
-const Drop = () => {
+const Drop = ({onMenuClick}) => {
     const [isOpen, setOpen] = useState(false);
+
+    const handleMenuSelect = () => {
+        setOpen(false);
+        onMenuClick('Сгенерировать AI');
+    };
+
     return (
         <div>
             <button className="menu-button" onClick={() => setOpen(!isOpen)}>
@@ -17,7 +23,7 @@ const Drop = () => {
             <nav className={`menu ${isOpen ? "active" : ""}`}>
                 <ul className="menu-list">
                    <div className="new-buttons">
-                        <button className="btn-top">
+                        <button className="btn-top" onClick={handleMenuSelect}>
                             <span className='txt' style={{color:"black"}}>Новый звук с </span>
                             <span className='txt' style={{color:"red"}}>AI</span>
                         </button>

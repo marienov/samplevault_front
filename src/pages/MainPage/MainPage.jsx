@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./MainPage.css"
 import LeftMenu from "../../components/LeftMenu/LeftMenu";
 
@@ -9,7 +9,7 @@ import AudioPlayer from '../../components/Player/Player';
 
 // import tracks from "../../tracks";
 
-const MainPage = () => {
+const MainPage = ({selectedMenuDrop, handlerselectedMenuDrop}) => {
     
     const [playingPlaylist, setPlayingPlaylist] = useState([]); 
     const [currentMusicID, setCurrentMusicID] = useState(0); 
@@ -17,8 +17,12 @@ const MainPage = () => {
     const [selectedMenu, setSelectedMenu] = useState('Лента'); 
 
     const handleMenuClick = (menuName) => {
-        setSelectedMenu(menuName);
+        handlerselectedMenuDrop(menuName);
     };
+
+    useEffect(() => {
+        setSelectedMenu(selectedMenuDrop); // Обновляем selectedMenu при изменении selectedMenuDrop
+    }, [selectedMenuDrop]);
 
     const onStartMusic = (playlist, music_index) => {
         

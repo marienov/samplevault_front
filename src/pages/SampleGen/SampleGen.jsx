@@ -38,6 +38,7 @@ const SampleGen = () => {
                     author: 'autor',
                     duration: item.duration,
                     title: item.title,
+                    audioUrl: item.audio_url
                 };
             });
             console.log(typeof(Sounds))
@@ -50,13 +51,40 @@ const SampleGen = () => {
 
     };
 
+    const handleGenerateSound = async () => {
+        console.log("HERE")
+        try {
+            const response = await fetch('https://samplevault.ru/api/v1/sounds/generate', {
+                method: 'GET',
+                mode: 'cors',
+                // Добавьте необходимые заголовки и тело запроса, если требуется
+            });
+
+            if (!response.ok) {
+                throw new Error('Ошибка при запросе на сервер');
+            }
+
+            // Получение данных из ответа
+            //const data = await response.json();
+
+            // Обновление списка genSounds с новым сгенерированным треком
+            setGenSounds(prevSounds => [{
+                imageUrl: "SongImgs/song1.png",
+                title: "GeneratedSound",
+                audioUrl: 'https://samplevault.ru/api/v1/sounds/generate'
+            }, ...prevSounds]);
+        } catch (error) {
+            console.error('Ошибка:', error);
+        }
+    };
+
     useEffect(() => {
         handleGetGenSounds();
     }, []);
 
     return (
         <div className="right-selection">
-            <Generation />
+            <Generation onGenerate={handleGenerateSound}/>
 
             <div className='sample-gen-body-recent'>
                 <div className='sample-gen-text-recent-wrapper'>

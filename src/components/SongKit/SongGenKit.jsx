@@ -11,7 +11,12 @@ const SongGenKit = (object) => {
         {console.log(object.sounds)}
         {console.log(typeof(object.sounds))}
         {object.sounds.map((sound, index) => (
-                    <SongGen number={index+1} {...sound} />
+                    <SongGen 
+                      number={index+1}
+                      imageUrl={sound.imageUrl}
+                      title={sound.title}
+                      audioUrl={sound.audioUrl}
+                    />
                 ))}
     </div>
 )

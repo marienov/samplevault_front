@@ -9,11 +9,11 @@ import RightPart from './RightPart/RightPart';
 
 
 
-const Navbar = () => {
+const Navbar = ({onMenuClick}) => {
     return (
         <div className="navbar">
             <LogoPart/>
-            <RightPart/>
+            <RightPart onMenuClick={onMenuClick}/>
         </div>
     );
 };

@@ -3,10 +3,10 @@ import "./RightPart.css";
 import Drop from "../Drop/Drop"
 
 
-const RightPart = () => {
+const RightPart = ({onMenuClick}) => {
     return (
         <div className="right-section">
-            <Drop/>
+            <Drop onMenuClick={onMenuClick}/>
             <div className='ring'>
                 <img className='w' src={"icons/ring.svg"} alt="My SVG" />
             </div>
