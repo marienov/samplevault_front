@@ -2,42 +2,17 @@
 import React, { useState, useEffect } from 'react';
 import "./SampleCollection.css"
 import SampleItem from './UI/Sample/SampleItem';
-import Body1 from "./UI/body/body1"
+import Body1 from "./UI/Sample/SampleItem.css"
+import {ImageSection} from "../../components/ImageSection/ImageSection";
+// import SoundProperties from "./UI/SoundsProperties/SoundProperties";
+// import Cardkit from "../../components/Cardkit/Cardkit";
 
 const SampleCollection = () =>  {
     const [samples, setSamples] = useState([]);
 
-    const handleFileUpload = async (event) => {
-        const file = event.target.files[0];
-        console.log('Выбранный файл:', file);
-
-        const formData = new FormData();
-        formData.append('audio', file);
-
-        try {
-            const response = await fetch('https://samplevault.ru/api/v1/samples/upload', {
-                method: 'POST',
-                body: formData,
-                mode: 'cors'
-            });
-            console.log(response)
-            if (!response) {
-                throw new Error('Ошибка при загрузке файла');
-            }
-
-            const data = await response.json();
-            console.log('Файл успешно загружен:', data);
-        } catch (error) {
-            console.error('Ошибка:', error);
-        }
-
-        // TODO Сделать, чтобы sample с ответа добавлять в массив samples, а не ходить за целым списком
-        handleGetAllSamples();
-    };
-
     const handleGetAllSamples = async (event) => {
         try {
-            const response = await fetch('https://samplevault.ru/api/v1/samples', {
+            const response = await fetch('https://samplevault.ru/api/v1/sounds', {
                 method: 'GET',
                 mode: 'cors'
             });
@@ -61,11 +36,13 @@ const SampleCollection = () =>  {
 
             const updatedSamples = data.map(item => {
                 return {
-                    imageUrl: item.icon_url,
+                    icon_url: item.icon_url,
+                    title: item.title,
+                    musical_instrument: item.musical_instrument,
                     genre: item.genre,
-                    duration: item.duration,
-                    soundName: item.title,
-                    musicStyle: item.musical_instrument,
+                    mood: item.mood,
+                    tonality: item.tonality,
+                    tempo: item.tempo,
                 };
             });
 
@@ -80,13 +57,19 @@ const SampleCollection = () =>  {
     }, []);
 
     return (
-        <div>
-            <input type="file" onChange={handleFileUpload} id="fileInput" className="custom-file-input"/>
-            <label htmlFor="fileInput" className="custom-file-label">
-            </label>
-            <div>
+        <div className="sounds-block_box">
+            <div className="sound-properties-container">
                 {samples.map((sample, index) => (
-                    <SampleItem key={index} {...sample} />
+                    <SampleItem
+                        number = {index+1}
+                        icon_url = {sample.icon_url}
+                        title = {sample.title}
+                        musical_instrument = {sample.musical_instrument}
+                        genre = {sample.genre}
+                        mood = {sample.mood}
+                        tonality = {sample.tonality}
+                        tempo = {sample.tempo}
+                    />
                 ))}
             </div>
         </div>
