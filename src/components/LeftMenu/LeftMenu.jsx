@@ -20,7 +20,7 @@ const LeftMenu = () => {
                 </div>
                 <span className="left-selection_txt">Лента</span>
             </div>
-            <div className="left-selection_button" onClick={() => onMenuClick('/generate')}>
+            <div className="left-selection_button" onClick={() => onMenuClick('/sound_collection')}>
                 <div className="left-selection_button_img">
                     <img src={"icons/sounds.svg"} alt="search" />
                 </div>
