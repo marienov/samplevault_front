@@ -1,90 +1,105 @@
-.song-container {
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 20px; */
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px ;
-    padding-bottom: 5px ;
-    border-radius: 10px;
-    position: relative;
-    gap: 10px;
+.frame168-container {
+    width: 100%;
     display: flex;
+    overflow: auto;
+    min-height: 100vh;
     align-items: center;
+    flex-direction: column;
 }
-
-.song-container:hover {
-    background-color: #D9D9D9;
-}
-
-.song-info {
-    gap: 5px;
-    /*width: 50vw;*/
+.frame168-frame168 {
+    gap: 423px;
+    width: 1112px;
+    height: auto;
     display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    padding: 20px 0;
+    align-items: flex-start;
+    border-color: rgba(217, 217, 217, 1);
+    border-style: solid;
+    border-width: 0 0 1px;
 }
-
-.song-number {
+.frame168-searchbarsample {
     gap: 10px;
+    width: 407px;
     display: flex;
     padding: 10px;
     align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: var(--dl-color-color_base-white);
 }
-
-.song-number-text {
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24.38px;
-    text-align: left;
-
-}
-
-.song-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-}
-
-.song-details {
-    padding-left: 10px;
-    flex-grow: 1;
-}
-
-.sample-properties-title {
-    font-family: Montserrat;
-    color:  #989898;
-    /*font-size: 15px;*/
-    /*font-weight: 500;*/
-    /*line-height: 22.5px;*/
-    /*text-align: left;*/
-    padding-left: 70px;
-    /*padding-top: 20px;*/
-    padding-bottom: 25px;
-    /*padding-right: 10px;*/
-    /*flex: 1;*/
-    /*w: 500px;*/
-    flex: 0 0 28%;
-}
-
-.song-description {
-    font-family: Montserrat;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: left;
-    color:  #989898;
-}
-
-.song-control-img {
+.frame168-searchsm {
     width: 24px;
     height: 24px;
     display: flex;
     position: relative;
     align-items: flex-start;
     flex-shrink: 0;
+}
+.frame168-searchsm1 {
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+.frame168-text {
+    color: var(--dl-color-color_base-black);
+    height: auto;
+    font-size: 15px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame168-frame70 {
+    width: 282px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.frame168-frame68 {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+}
+.frame168-text2 {
+    color: var(--dl-color-color_base-black);
+    height: auto;
+    font-size: 15px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame168-frame69 {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.frame168-text4 {
+    color: var(--dl-color-color_accent_black-400);
+    height: auto;
+    font-size: 15px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame168-chevrondown {
+    width: 24px;
+    height: 24px;
 }

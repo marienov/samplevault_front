@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import "./SoundCollection.css"
 import SampleItem from '../../components/SoundCollectionContent/Sample/SampleItem';
 import SampleProperties from '../../components/SoundCollectionContent/SampleProperties/SampleProperties';
+import SearchFilter from '../../components/SoundCollectionContent/SearchFilter/SearchFilter';
 import Search from '../../components/SoundCollectionContent/Search/Search';
 import Body1 from "../../components/SoundCollectionContent/Sample/SampleItem.css"
 
@@ -87,6 +88,7 @@ const SoundCollection = () =>  {
     return (
         <div className="sounds-block_box">
             <div className="sound-properties-container">
+                <SearchFilter/>
                 <Search/>
                 <SampleProperties/>
                 {samples.map((sample) => (
