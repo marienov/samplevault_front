@@ -3,7 +3,31 @@ import { useNavigate } from 'react-router-dom';
 import "./Drop.css"
 
 
+// TODO: Необходимо исправить ошибку с подгрузкой модуля
+import Modal from './modal/index';
+
+// import "./styles.css";
+
+// export default function App() {
+//   const [isModalActive, setModalActive] = useState(false);
+
+//   const handleModalOpen = () => {
+//     setModalActive(true);
+//   };
+//   const handleModalClose = () => {
+//     setModalActive(false);
+//   };
+
+
 const Drop = ({onMenuClick}) => {
+        const [isModalActive, setModalActive] = useState(false);
+
+    const handleModalOpen = () => {
+        setModalActive(true);
+    };
+    const handleModalClose = () => {
+        setModalActive(false);
+    };
     const [isOpen, setOpen] = useState(false);
 
     const navigate = useNavigate(); 
@@ -35,7 +59,7 @@ const Drop = ({onMenuClick}) => {
                         </button>
                    </div>
                    <div className="own-sound">
-                     <button className="btn2">
+                     <button className="btn2" onClick={handleModalOpen}> 
                         <div className="bl">
                             <img className="chevron" src={"icons/add-circle.svg"} alt="My SVG" />
                         </div>
@@ -43,10 +67,20 @@ const Drop = ({onMenuClick}) => {
                         <span className='txt' style={{color:"black", textAlign:"center", alignItems:"center",justifyContent:"center"}}>Загрузить новый трек</span>
                         </div>
                      </button>
+                     
                    </div>
                 </ul>
             </nav>
+            <div>
+        {isModalActive && (
+          <Modal title="some modal title" onClose={handleModalClose}>
+            Hello world
+          </Modal>
+        )}
+      </div>
+            
         </div>
+        
     );
 };
 
