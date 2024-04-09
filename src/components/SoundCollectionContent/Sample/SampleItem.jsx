@@ -6,7 +6,6 @@ import "./SampleItem.css"
 
 
 export function SampleItem({
-    number,
     title,
     icon_url,
     musical_instrument,
@@ -16,9 +15,6 @@ export function SampleItem({
     tempo,}) {
     return (
         <div className="song-container">
-            <div className="song-number">
-                <span className="song-number-text">{number}</span>
-            </div>
             <div className="song-info">
                 <img src={icon_url} alt={title} className="song-image"/>
                 <h2 className="song-title">{title}</h2>
@@ -43,42 +39,3 @@ export function SampleItem({
 };
 
 export default SampleItem;
-
-
-/*
-<div className="cardkit-stroke1artist">
-            <div className="cardkit-frame18">
-              <span className="cardkit-text02">1</span>
-            </div>
-            <div className="cardkit-frame20">
-              <img
-                // src={image}
-                alt="IMAGE111145"
-                className="cardkit-image11"
-              />
-              <div className="cardkit-frame19">
-                <span className="cardkit-text03">
-                  <span className="cardkit-text04">
-                    <span>Ambient Electronica</span>
-                    <br></br>
-                    <span></span>
-                  </span>
-                  <span>Electronic</span>
-                </span>
-                <div className="cardkit-star01">
-                  <img
-                    src="./icons/star01i114-fzuj.svg"
-                    alt="star01I114"
-                    className="cardkit-star0101"
-                  />
-                </div>
-                <div className="cardkit-download01">
-                  <img
-                    src="/icons/download01i114-ybo.svg"
-                    alt="download01I114"
-                    className="cardkit-download0101"
-                  />
-                </div>
-              </div>
-            </div>
-          </div> */
