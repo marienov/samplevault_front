@@ -4,7 +4,7 @@ import "./Drop.css"
 
 
 // TODO: Необходимо исправить ошибку с подгрузкой модуля
-import Modal from './modal/index';
+// import Modal from './modal/index';
 
 // import "./styles.css";
 
@@ -73,9 +73,9 @@ const Drop = ({onMenuClick}) => {
             </nav>
             <div>
         {isModalActive && (
-          <Modal title="some modal title" onClose={handleModalClose}>
+          <div title="some modal title" onClose={handleModalClose}>
             Hello world
-          </Modal>
+          </div>
         )}
       </div>
             
