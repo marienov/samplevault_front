@@ -7,8 +7,17 @@ import LeftMenu from './components/LeftMenu/LeftMenu';
 import Feed from './containers/Feed/Feed'
 import SoundGen from './containers/SoundGen/SoundGen'
 import SoundCollection from './containers/SoundCollection/SoundCollection';
+import AudioPlayer from './components/Player/Player';
+
+const playlist = [
+  { name: "Песня 1", src: "https://samplevault.ru/sounds/Nice_Strum_A.wav" },
+  { name: "Песня 2", src: "https://samplevault.ru/sounds/Gentle_Riff_C.wav" },
+  { name: "Песня 3", src: "https://samplevault.ru/sounds/Nice_Strum_D.wav" },
+  // Добавьте столько треков, сколько необходимо
+];
 
 function App() {
+  
   return (
     <Router>
         <Navbar />
@@ -27,7 +36,7 @@ function App() {
             </Routes> 
           </div>
 
-        {/* <Player /> */}
+          <AudioPlayer initialPlaylist={playlist} />
 
     </Router>
   );
