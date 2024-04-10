@@ -1,0 +1,105 @@
+.frame168-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+}
+.frame168-frame168 {
+    gap: 423px;
+    width: 1112px;
+    height: auto;
+    display: flex;
+    padding: 20px 0;
+    align-items: flex-start;
+    border-color: rgba(217, 217, 217, 1);
+    border-style: solid;
+    border-width: 0 0 1px;
+}
+.frame168-searchbarsample {
+    gap: 10px;
+    width: 407px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background-color: var(--dl-color-color_base-white);
+}
+.frame168-searchsm {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+.frame168-searchsm1 {
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+.frame168-text {
+    color: var(--dl-color-color_base-black);
+    height: auto;
+    font-size: 15px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame168-frame70 {
+    width: 282px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.frame168-frame68 {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+}
+.frame168-text2 {
+    color: var(--dl-color-color_base-black);
+    height: auto;
+    font-size: 15px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame168-frame69 {
+    gap: 10px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.frame168-text4 {
+    color: var(--dl-color-color_accent_black-400);
+    height: auto;
+    font-size: 15px;
+    font-style: Medium;
+    text-align: left;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame168-chevrondown {
+    width: 24px;
+    height: 24px;
+}
