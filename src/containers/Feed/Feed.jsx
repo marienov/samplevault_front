@@ -65,7 +65,8 @@ const Feed = (props) => {
         <div className="right-selection">
             <div className='container-new'>
                 <span className='text-new'>Новое</span>
-                <ImageSection/>
+                {/* <ImageSection/> */}
+                ToDo: ReNew Feed
             </div>
             <div className='container-new'>
                 <span className='text-new'>В тренде</span>
